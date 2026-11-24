@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>muzamiltaki — السيرة الذاتية</title>
+<meta name="description" content="الموقع الشخصي لـ muzamiltaki: المهارات والخدمات والمشاريع.">
+<meta property="og:title" content="muzamiltaki">
+<meta property="og:image" content="assets/photo.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232447f5'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>m</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f7;--surface:#fff;--ink:#12161c;--muted:#5d6572;--line:#dfe2e8;--accent:#2447f5;--accent-ink:#fff;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1015;--surface:#161a21;--ink:#eef0f4;--muted:#9aa3b2;--line:#262c36;--accent:#6c87ff;--accent-ink:#0d1015;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#0d1015;--surface:#161a21;--ink:#eef0f4;--muted:#9aa3b2;--line:#262c36;--accent:#6c87ff;--accent-ink:#0d1015;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.8 "IBM Plex Sans Arabic",Tahoma,system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:auto;padding:0 22px}
+/* nav */
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;height:60px}
+nav b{font-weight:700;letter-spacing:.2px;direction:ltr}
+nav ul{display:flex;gap:4px;list-style:none;padding:0;margin-inline-start:auto;overflow-x:auto}
+nav li a{display:block;padding:6px 12px;border-radius:99px;text-decoration:none;color:var(--muted);font-size:15px;white-space:nowrap}
+nav li a:hover,nav li a.on{background:var(--ink);color:var(--bg)}
+#theme{border:1px solid var(--line);background:var(--surface);color:var(--ink);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:16px}
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;align-items:center;padding:64px 0 56px}
+.hero h1{font-size:clamp(40px,8vw,84px);line-height:1.05;font-weight:700;direction:ltr;text-align:right;letter-spacing:-1.5px;overflow-wrap:anywhere}
+.role{font-size:clamp(19px,3vw,26px);color:var(--accent);font-weight:500;margin:14px 0 18px}
+.lead{color:var(--muted);max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:11px 22px;border-radius:12px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-2px)}
+.btn{transition:transform .15s}
+.photo{position:relative;justify-self:center;width:min(100%,380px)}
+.photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:200px 200px 28px 28px;filter:grayscale(1) contrast(1.05);border:1px solid var(--line)}
+.photo::after{content:"";position:absolute;inset:auto -14px -14px auto;width:60%;height:60%;border:2px solid var(--accent);border-radius:28px;z-index:-1}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:18px;background:var(--surface);overflow:hidden}
+.stats div{padding:20px;text-align:center}
+.stats div+div{border-inline-start:1px solid var(--line)}
+.stats strong{display:block;font-size:30px;line-height:1.2;direction:ltr}
+.stats span{color:var(--muted);font-size:14px}
+/* sections */
+section{padding:84px 0 0}
+.head{display:flex;align-items:baseline;gap:14px;margin-bottom:30px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.head h2{font-size:clamp(26px,4vw,36px);font-weight:700}
+.head p{color:var(--muted);font-size:15px}
+.about p{max-width:42em;font-size:18px}
+.about p+p{margin-top:14px;color:var(--muted)}
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{font-size:19px;margin-bottom:16px}
+.sk{margin-top:14px}
+.sk div{display:flex;justify-content:space-between;font-size:15px}
+.sk i{font-style:normal;color:var(--muted);direction:ltr}
+.bar{height:7px;border-radius:9px;background:var(--line);margin-top:6px;overflow:hidden}
+.bar b{display:block;height:100%;width:0;background:var(--accent);border-radius:9px;transition:width 1s cubic-bezier(.2,.7,.2,1);margin-inline-start:0}
+.show .bar b{width:var(--w)}
+/* services */
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.svc{border-top:3px solid var(--accent);border-radius:4px 4px 18px 18px}
+.svc .ic{font-size:26px;display:block;margin-bottom:10px}
+.svc p{color:var(--muted);font-size:15.5px}
+/* projects */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.filters button{font:inherit;font-size:15px;padding:6px 16px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.prj{display:flex;flex-direction:column;gap:10px}
+.prj h3{margin:0}
+.prj p{color:var(--muted);font-size:15.5px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px;direction:ltr;justify-content:flex-end}
+.tags span{font-size:12.5px;padding:2px 10px;border-radius:99px;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent)}
+.prj a{font-weight:500;text-decoration:none;color:var(--accent)}
+.prj a:hover{text-decoration:underline}
+.prj[hidden]{display:none}
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.contact a{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.contact a:hover{border-color:var(--accent)}
+.contact small{display:block;color:var(--muted)}
+.contact strong{direction:ltr;display:block;text-align:right;overflow-wrap:anywhere}
+footer{margin-top:90px;border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:14px;text-align:center}
+@media (max-width:760px){
+ .hero{grid-template-columns:1fr;padding-top:36px;gap:34px}
+ .photo{order:-1;width:min(78%,300px)}
+ .hero h1{text-align:center}.hero>div{text-align:center}.lead{margin-inline:auto}.cta{justify-content:center}
+ .stats{grid-template-columns:1fr 1fr}.stats div:nth-child(3){border-inline-start:0}.stats div:nth-child(n+3){border-top:1px solid var(--line)}
+ nav b{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+ <b>muzamiltaki</b>
+ <ul id="menu">
+  <li><a href="#about">نبذة</a></li><li><a href="#skills">المهارات</a></li><li><a href="#services">الخدمات</a></li><li><a href="#projects">المشاريع</a></li><li><a href="#contact">تواصل</a></li>
+ </ul>
+ <button id="theme" aria-label="تبديل الوضع الليلي">◐</button>
+</div></nav>
+
+<main class="wrap">
+ <header class="hero" id="top">
+  <div>
+   <h1 id="name"></h1>
+   <p class="role" id="role"></p>
+   <p class="lead" id="lead"></p>
+   <div class="cta"><a class="btn main" href="#contact">تواصل معي</a><a class="btn" href="#projects">شاهد أعمالي</a></div>
+  </div>
+  <div class="photo"><img src="assets/photo.png" alt="صورة muzamiltaki" width="380" height="475"></div>
+ </header>
+ <div class="stats" id="stats"></div>
+
+ <section id="about" class="about"><div class="head"><h2>نبذة عني</h2></div><div id="aboutText"></div></section>
+ <section id="skills"><div class="head"><h2>المهارات</h2><p>ما أتقنه وأستخدمه يوميًا</p></div><div class="skills" id="skillsGrid"></div></section>
+ <section id="services"><div class="head"><h2>الخدمات</h2><p>ما يمكنني تنفيذه لك</p></div><div class="services" id="svcGrid"></div></section>
+ <section id="projects"><div class="head"><h2>المشاريع</h2><p>مختارات من أعمالي</p></div><div class="filters" id="filters" role="group" aria-label="تصفية المشاريع"></div><div class="projects" id="prjGrid"></div></section>
+ <section id="contact"><div class="head"><h2>تواصل معي</h2></div><div class="contact" id="contactGrid"></div></section>
+</main>
+<footer>© <span id="yr"></span> muzamiltaki</footer>
+
+<script>
+/* ===== عدّل هنا فقط: كل المحتوى في هذا الكائن ===== */
+const DATA = {
+  name: "muzamiltaki",
+  role: "مطوّر ومصمّم مواقع",
+  lead: "أبني مواقع وتطبيقات سريعة وواضحة، وأحوّل الفكرة إلى منتج يعمل فعلًا.",
+  stats: [["3+","سنوات خبرة"],["20+","مشروعًا منجزًا"],["15+","عميل راضٍ"],["100%","التزام بالموعد"]],
+  about: [
+    "أنا muzamiltaki، أعمل على تصميم وبرمجة المواقع والتطبيقات. أهتم بالتفاصيل وبتجربة المستخدم وبكود نظيف يسهل تطويره.",
+    "أحب التعلّم المستمر وتجربة الأدوات الجديدة، وأسعى دائمًا لتسليم عمل يفخر به العميل."
+  ],
+  skills: [
+    {group:"تطوير الواجهات", items:[["HTML & CSS",90],["JavaScript",80],["React",70],["تصميم متجاوب",85]]},
+    {group:"الخلفية والأدوات", items:[["Node.js",65],["Git & GitHub",85],["قواعد البيانات",60],["REST APIs",70]]},
+    {group:"التصميم", items:[["واجهات المستخدم UI",80],["Figma",75],["هوية بصرية",65],["تحسين الأداء",75]]}
+  ],
+  services: [
+    {icon:"🌐",title:"تصميم المواقع",text:"مواقع تعريفية وشخصية وتجارية بتصميم عصري يعمل على كل الأجهزة."},
+    {icon:"⚙️",title:"تطوير تطبيقات الويب",text:"لوحات تحكم وأنظمة حسب الطلب بأداء سريع وأمان جيد."},
+    {icon:"🎨",title:"تصميم الواجهات",text:"تصميم شاشات واضحة وسهلة الاستخدام قبل البرمجة."},
+    {icon:"🚀",title:"رفع واستضافة",text:"نشر الموقع على GitHub Pages أو غيرها وربطه بنطاق خاص."},
+    {icon:"🛠️",title:"صيانة وتطوير",text:"إصلاح الأخطاء وإضافة ميزات وتسريع المواقع القائمة."}
+  ],
+  projects: [
+    {title:"متجر إلكتروني",cat:"مواقع",text:"متجر بسلة مشتريات وصفحات منتجات وبحث سريع.",tags:["HTML","CSS","JS"],link:"#"},
+    {title:"لوحة تحكم",cat:"تطبيقات",text:"لوحة إحصائيات مع رسوم بيانية وجداول قابلة للتصفية.",tags:["React","Chart.js"],link:"#"},
+    {title:"موقع مطعم",cat:"مواقع",text:"موقع تعريفي بقائمة طعام وحجز طاولات.",tags:["HTML","CSS"],link:"#"},
+    {title:"تطبيق مهام",cat:"تطبيقات",text:"إدارة المهام اليومية مع تذكيرات وحفظ محلي.",tags:["JS","PWA"],link:"#"},
+    {title:"هوية بصرية",cat:"تصميم",text:"شعار وألوان وخطوط لمشروع ناشئ.",tags:["Figma"],link:"#"},
+    {title:"واجهة تطبيق جوال",cat:"تصميم",text:"تصميم شاشات تطبيق توصيل كاملة.",tags:["Figma","UI"],link:"#"}
+  ],
+  contact: [
+    ["GitHub","github.com/muzamiltaki","https://github.com/muzamiltaki"],
+    ["البريد","you@example.com","mailto:you@example.com"],
+    ["واتساب","+000 000 000 000","https://wa.me/000000000000"],
+    ["إنستغرام","@muzamiltaki","https://instagram.com/muzamiltaki"]
+  ]
+};
+/* ===== نهاية المحتوى ===== */
+
+const $=id=>document.getElementById(id), esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+$('name').textContent=DATA.name; $('role').textContent=DATA.role; $('lead').textContent=DATA.lead; $('yr').textContent=new Date().getFullYear();
+$('stats').innerHTML=DATA.stats.map(s=>`<div><strong>${esc(s[0])}</strong><span>${esc(s[1])}</span></div>`).join('');
+$('aboutText').innerHTML=DATA.about.map(p=>`<p>${esc(p)}</p>`).join('');
+$('skillsGrid').innerHTML=DATA.skills.map(g=>`<article class="card"><h3>${esc(g.group)}</h3>${g.items.map(i=>`<div class="sk"><div><span>${esc(i[0])}</span><i>${i[1]}%</i></div><div class="bar"><b style="--w:${i[1]}%"></b></div></div>`).join('')}</article>`).join('');
+$('svcGrid').innerHTML=DATA.services.map(s=>`<article class="card svc"><span class="ic" aria-hidden="true">${s.icon}</span><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></article>`).join('');
+const cats=['الكل',...new Set(DATA.projects.map(p=>p.cat))];
+$('filters').innerHTML=cats.map((c,i)=>`<button aria-pressed="${i==0}" data-c="${esc(c)}">${esc(c)}</button>`).join('');
+$('prjGrid').innerHTML=DATA.projects.map(p=>`<article class="card prj" data-c="${esc(p.cat)}"><h3>${esc(p.title)}</h3><div class="tags">${p.tags.map(t=>`<span>${esc(t)}</span>`).join('')}</div><p>${esc(p.text)}</p><a href="${esc(p.link)}" target="_blank" rel="noopener">عرض المشروع ←</a></article>`).join('');
+$('filters').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+ document.querySelectorAll('#filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+ document.querySelectorAll('.prj').forEach(c=>c.hidden=!(b.dataset.c==='الكل'||c.dataset.c===b.dataset.c));});
+$('contactGrid').innerHTML=DATA.contact.map(c=>`<a href="${esc(c[2])}" target="_blank" rel="noopener"><small>${esc(c[0])}</small><strong>${esc(c[1])}</strong></a>`).join('');
+// skill bars animate when visible
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.25});
+document.querySelectorAll('.skills .card').forEach(c=>io.observe(c));
+// active nav link
+const links=[...document.querySelectorAll('#menu a')];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section').forEach(s=>so.observe(s));
+// theme toggle
+$('theme').onclick=()=>{const d=document.documentElement,dark=getComputedStyle(d).colorScheme==='dark';d.dataset.theme=dark?'light':'dark'};
+</script>
+</body>
+</html>
